@@ -1,0 +1,34 @@
+.section-picker-root {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    margin: 10px 10px 0px 0px;
+    text-align: right;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-picker-root p {
+    margin: 0px 0px 10px 0px;
+    padding-right: 10px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.section-picker-root p:hover:not(.activeSection){
+    transition: 0.5s ease;
+    margin: 0px 5px 10px 0px;
+}
+
+.section-picker-root .activeSection {
+    margin: 0px 0px 10px 0px;
+    transition: 0.5s ease;
+}
+
+.sliding-bar {
+    position: relative;
+    height: 20px;
+    border-right: 2px solid white;
+    transition: 1s ease;
+}

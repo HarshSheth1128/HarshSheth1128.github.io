@@ -1,0 +1,61 @@
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+#aboveName {
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-family: 'IBM Plex Sans';
+}
+
+#name {
+    font-size: 8rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#belowName {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-family: 'IBM Plex Sans';
+}
+
+.textContainer{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    position: absolute;
+    top: 20%;
+    color: white;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 375px) {
+    #name {
+        font-size: 7rem;
+    }
+  }
+
+
+.icons{
+    position: absolute;
+    z-index: 10;
+}
+  
+.iconButton {
+    position: relative;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    font-size: 1.6rem;
+    color: white;
+    z-index: 10px;
+}
