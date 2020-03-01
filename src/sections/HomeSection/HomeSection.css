@@ -58,4 +58,5 @@
     font-size: 1.6rem;
     color: white;
     z-index: 10px;
+    cursor: pointer;
 }

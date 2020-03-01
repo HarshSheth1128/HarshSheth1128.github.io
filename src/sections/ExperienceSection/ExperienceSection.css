@@ -4,11 +4,10 @@
     padding-top: 3%;
     padding-left: 3%;
     box-sizing: border-box;
+    display: flex;
 }
 
-.experieceTextContainer {
-    top: 15%
-}
+
 
 .cardSection {
     height: 75%;
@@ -19,7 +18,7 @@
 }
 
 .aboveTextDiv {
-    width: 500px;
+    width: 100%;
     text-align: start;
 }
 
@@ -27,6 +26,7 @@
     font-size: 1.2rem;
     margin: 0px;
     font-family: 'IBM Plex Sans';
+    width: calc(100% - 150px);
 }
 
 #experienceHeading {
@@ -188,6 +188,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .aboveTextDiv p {
+        font-size: 1rem;
+        width: calc(100% - 150px);
+    }
+
+    #experienceHeading {
+        font-size: 3rem;
+    }
+
     .experienceContent{ 
         display: none;
     }

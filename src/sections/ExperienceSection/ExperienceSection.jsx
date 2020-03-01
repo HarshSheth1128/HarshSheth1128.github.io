@@ -53,23 +53,15 @@ class ExperienceSection extends Component {
     }
 
     renderContainerContent = (experience) => {
-        if (!experience.hover) {
-            return (
-                <div className="contentContainer">
-                    <div className="jobInfo">
-                        <span className="jobTitle"><b>{experience.title}</b></span>
-                        <span className="title"><b>{experience.jobTitle}</b></span>
-                        <div className="jobTime"><span>{experience.time}</span></div>
-                    </div>
+        return (
+            <div className="contentContainer">
+                <div className="jobInfo">
+                    <span className="jobTitle"><b>{experience.title}</b></span>
+                    <span className="title"><b>{experience.jobTitle}</b></span>
+                    <div className="jobTime"><span>{experience.time}</span></div>
                 </div>
-            )
-        } else {
-            return (
-                <div className="contentContainer">
-                    <span>View On LinkedIn</span>
-                </div>
-            )
-        }
+            </div>
+        )
     }
 
     renderExperienceContent(title) {
@@ -120,11 +112,9 @@ class ExperienceSection extends Component {
             <div className="root">
                 <div className="content">
                     <div className='textSection'>
-                        <div className='experienceTextContainer'>
-                            <div className='aboveTextDiv'>
-                                <p>I've been blessed to work with many different people in life. All of them have provided me with invaluable</p>
-                                <h1 id="experienceHeading">Experience</h1>
-                            </div>
+                        <div className='aboveTextDiv'>
+                            <p>I've been blessed to work with many different people in life. All of them have provided me with invaluable</p>
+                            <h1 id="experienceHeading">Experience</h1>
                         </div>
                     </div>
                     <div className='cardSection'>
@@ -132,9 +122,7 @@ class ExperienceSection extends Component {
                             {
                                 this.state.experiences.map((experience) => (
                                     <>
-                                        <div className="experienceContainer"
-                                            onMouseEnter={() => this.toggleHover(experience.id)}
-                                            onMouseLeave={() => this.toggleHover(experience.id)}>
+                                        <div className="experienceContainer">
                                             <div className="logo-info-container">
                                                 <div className="logoContainer">
                                                     <img alt={experience.jobTitle} src={experience.icon}></img>

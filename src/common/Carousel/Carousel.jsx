@@ -89,8 +89,8 @@ const Carousel = () => {
                     <CarouselCard title={element.title} type={getTypeName(index)} image={element.image} description={element.description} />
                 ))}
             </div>
-            <button className="carousel-button" onClick={handleNext}>{'>'}</button>
-            <button className="carousel-button" onClick={handlePrev}>{'<'}</button>
+            <button className="carousel-button" onClick={handleNext}><i class="fas fa-chevron-right"></i></button>
+            <button className="carousel-button" onClick={handlePrev}><i class="fas fa-chevron-left"></i></button>
         </div>
     )
 }

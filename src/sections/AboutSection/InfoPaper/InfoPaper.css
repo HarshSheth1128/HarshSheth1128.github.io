@@ -79,6 +79,7 @@
     border: 1px solid #c4c4c4;
     box-shadow: 1px 1px 3px #595959;
     color: #595959;
+    cursor: pointer;
 }
 
 .profileButton:hover{
