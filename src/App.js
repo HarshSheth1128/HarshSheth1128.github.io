@@ -4,7 +4,7 @@ import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import HomeSection from './sections/HomeSection/HomeSection';
 import AboutSection from './sections/AboutSection/AboutSection';
-import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
+// import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
 import ExperienceSection from './sections/ExperienceSection/ExperienceSection';
 import SectionPicker from './common/SectionPicker';
 
