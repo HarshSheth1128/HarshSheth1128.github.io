@@ -16,8 +16,8 @@ class SectionPicker extends Component {
                 <div className="section-container">
                     <p className={this.getClassName(1)} onClick={() => this.props.setViewPage(1)} >Home</p>
                     <p className={this.getClassName(2)} onClick={() => this.props.setViewPage(2)} >About</p>
-                    <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Projects</p>
-                    <p className={this.getClassName(4)} onClick={() => this.props.setViewPage(4)}>Experience</p>
+                    {/* <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Projects</p> */}
+                    <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Experience</p>
                 </div>
                 <div className="sliding-bar" style={{ top: this.getTop() }}></div>
             </div>

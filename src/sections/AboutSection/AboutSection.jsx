@@ -7,6 +7,7 @@ import InfoPaper from './InfoPaper/InfoPaper';
 class AboutSection extends Component {
     state = {
         otherHobbies: [
+            'UI/UX Enthusiast',
             'Video Game Player',
             'Coffee Enthusiast',
             'Basketball Fanatic',
@@ -25,7 +26,6 @@ class AboutSection extends Component {
                         <div className="infoRoot">
                             <span id="aboveText">I am a</span>
                             <span className="bigText">Fullstack Developer</span>
-                            <span className="bigText">UI/UX Designer</span>
                             <div className="otherInfo">
                                 {
                                     this.state.otherHobbies.map(hobby => (

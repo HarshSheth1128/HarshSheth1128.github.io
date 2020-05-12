@@ -33,9 +33,9 @@ function App() {
               <div id="section2" className="section">
                 <AboutSection fullpageApi={fullpageApi} />
               </div>
-              <div id="section3" className="section">
+              {/* <div id="section3" className="section">
                 <ProjectsSection fullpageApi={fullpageApi} />
-              </div>
+              </div> */}
               <div id="section4" className="section">
                 <ExperienceSection fullpageApi={fullpageApi} />
               </div>

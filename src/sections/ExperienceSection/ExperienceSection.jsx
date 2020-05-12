@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ExperienceSection.css';
 import '../../common/Section.css';
-import SectionPicker from '../../common/SectionPicker';
 import Bonfire from '../../images/bonfire.png';
 import Veeva from '../../images/veeva.png';
 import PVelocity from '../../images/pvelocity.png';
@@ -75,7 +74,7 @@ class ExperienceSection extends Component {
                         with a team of <b>5 developers</b> and generated over
                         <b> $4000 in revenue</b> in 2 weeks</p>
                     <p>Worked in the whole software cycle from inception
-                        to market validation to design and finally deploying
+                    to market validation to design and finally deploying
                         an MVP</p>
                     <p>Personally developed a full-stack internal tool
                         that was used to categorize over <b>1000+ projects</b> and
@@ -87,14 +86,14 @@ class ExperienceSection extends Component {
             return (
                 <>
                     <p>Implemented a test harness written in <b>Node.js</b> and
-                        <b> Html5</b> that aggregated and presented test data in
+                        <b>Html5</b> that aggregated and presented test data in
                         a way that allowed the user to analyze trends and
                         locate the source of quickly and effectively.</p>
                     <p>Reduced daily integration testing time by <b>1 hour</b> by
                         automating specific tasks that were formerly done
                         manually using <b>Node</b> scripts</p>
                     <p>Used a variety of proprietary tools to investigate
-                        bugs, create issue reports, and delegate tasks to
+                    bugs, create issue reports, and delegate tasks to
                         the correct team member.</p>
                     <p>Automated nightly integration tests for a
                         CRM platform using Node.js</p>
@@ -102,7 +101,12 @@ class ExperienceSection extends Component {
             )
         } else {
             return (
-                <p>I still work here, more info coming soon ;)</p>
+                <>
+                    <p>Wrote a substantial web component used to deliver health care information using <b>Polymer.js</b> and <b>Redux</b>.</p>
+                    <p>Optimized the web component significantly on less performant browsers by leveraging modern APIs, applying modern web practices, and performing data restructuring on complex object models.</p>
+                    <p>Overhauled and contributed several UI features to the main application increasing the <b>efficiency, usability, and data visibility</b>.</p>
+                    <p>Created several developer tools ranging from scaffolding scripts, hot-reload scripts, and git tools in Node and Bash.</p>
+                </>
             )
         }
     }
@@ -113,7 +117,7 @@ class ExperienceSection extends Component {
                 <div className="content">
                     <div className='textSection'>
                         <div className='aboveTextDiv'>
-                            <p>I've been blessed to work with many different people in life. All of them have provided me with invaluable</p>
+                            <p>I've been blessed to work with many different people in life. All of them have provided me with invaluable experience</p>
                             <h1 id="experienceHeading">Experience</h1>
                         </div>
                     </div>
