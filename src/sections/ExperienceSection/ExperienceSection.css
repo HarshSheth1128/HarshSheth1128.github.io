@@ -1,10 +1,11 @@
 .textSection {
-    height: 25%;
+    height: 15%;
     width: 100%;
-    padding-top: 3%;
-    padding-left: 3%;
     box-sizing: border-box;
     display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -19,7 +20,10 @@
 
 .aboveTextDiv {
     width: 100%;
-    text-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboveTextDiv p {
@@ -27,6 +31,14 @@
     margin: 0px;
     font-family: 'IBM Plex Sans';
     width: calc(100% - 150px);
+}
+
+.experienceTitle {
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 12px;
 }
 
 #experienceHeading {
@@ -128,7 +140,7 @@
     align-items: flex-start;
     justify-content: space-around;
     height: 100%;
-    margin-right: 15spx;
+    margin-right: 15px;
 }
 
 .jobTitle {
@@ -151,10 +163,6 @@
 
 .jobTime {
     display: none;
-}
-
-.technologyIcon {
-
 }
 
 .technologiesContainer {
@@ -187,11 +195,22 @@
     justify-content: center;
 }
 
+.timelineParentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+}
+
 @media only screen and (max-width: 768px) {
 
     .aboveTextDiv p {
         font-size: 1rem;
         width: calc(100% - 150px);
+    }
+
+    .aboveTextDiv {
+        align-items: flex-start;
     }
 
     #experienceHeading {
@@ -215,6 +234,26 @@
     .jobTime {
         margin-top: 5%;
         display: flex;
+    }
+
+    .experienceTitle {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .subtitle {
+        font-size: 10px;
+    }
+
+    .textSection {
+        justify-content: flex-start;
+        padding: 20px;
+        height: 15%;
+        width: 50%;
+    }
+
+    .timelineParentContainer {
+        height: 85%;
     }
 
 

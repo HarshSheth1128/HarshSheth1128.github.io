@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './HomeSection.css';
 import '../../common/Section.css';
 import SectionPicker from '../../common/SectionPicker';
+import gif from '../../images/gifs/unnamed.gif'
 
 
 class HomeSection extends Component {
@@ -10,6 +11,7 @@ class HomeSection extends Component {
         return (
             <div className="root">
                 <div className="content">
+                    <img className="birdGif" src={gif} height="20px"></img>
                     <div className="icons">
                         <i onClick={() => window.location = 'https://github.com/HarshSheth1128'} id="githubButton" className="iconButton" class="iconButton fab fa-github-square"></i>
                         <i onClick={() => window.location = 'https://www.linkedin.com/in/harsh-sheth-2b92b9157/'} id="linkedInButton" className="iconButton" class="iconButton fab fa-linkedin"></i>

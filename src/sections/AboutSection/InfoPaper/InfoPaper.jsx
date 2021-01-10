@@ -122,22 +122,23 @@ class InfoPaper extends Component {
                                 onClick={() => this.setState({ displaySection: 'about' })}>
                                 About
                             </button>
+
+                        </div>
+                        <div className="stack">
                             <button
                                 className={this.getDisplaySection('resume')}>
                                 <a href={Resume}>Resume <i class="fas fa-external-link-alt"></i></a>
                             </button>
-                        </div>
-                        <div className="stack">
-                            <button
+                            {/* <button
                                 className={this.getDisplaySection('technical')}
                                 onClick={() => this.setState({ displaySection: 'technical' })}>
                                 Technical
-                            </button>
-                            <button
+                            </button> */}
+                            {/* <button
                                 className={this.getDisplaySection('philosophy')}
                                 onClick={() => this.setState({ displaySection: 'philosophy' })}>
                                 Philosophy
-                            </button>
+                            </button> */}
                         </div>
 
 

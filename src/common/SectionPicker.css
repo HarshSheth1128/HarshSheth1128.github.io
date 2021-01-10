@@ -1,3 +1,16 @@
+/* .section-picker-wrapper {
+    position: fixed;
+    right: 0px;
+    z-index: 1;
+    height: 0px;
+    width: 0px;
+    border-bottom: 100px solid transparent;
+    border-top: 100px solid #1d1d1d;
+    border-left: 100px solid transparent;
+    border-right: 100px solid #1d1d1d;
+    opacity: 0.85;
+} */
+
 .section-picker-root {
     position: absolute;
     z-index: 10;
@@ -7,6 +20,8 @@
     transition: 0.5s ease;
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    opacity: 0.7;
 }
 
 .section-picker-root p {

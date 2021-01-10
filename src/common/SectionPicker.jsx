@@ -12,15 +12,19 @@ class SectionPicker extends Component {
 
     render() {
         return (
-            <div className="section-picker-root">
-                <div className="section-container">
-                    <p className={this.getClassName(1)} onClick={() => this.props.setViewPage(1)} >Home</p>
-                    <p className={this.getClassName(2)} onClick={() => this.props.setViewPage(2)} >About</p>
-                    {/* <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Projects</p> */}
-                    <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Experience</p>
+            <>
+                <div className="section-picker-wrapper">
                 </div>
-                <div className="sliding-bar" style={{ top: this.getTop() }}></div>
-            </div>
+                <div className="section-picker-root">
+                    <div className="section-container">
+                        <p className={this.getClassName(1)} onClick={() => this.props.setViewPage(1)} >Home</p>
+                        <p className={this.getClassName(2)} onClick={() => this.props.setViewPage(2)} >About</p>
+                        {/* <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Projects</p> */}
+                        <p className={this.getClassName(3)} onClick={() => this.props.setViewPage(3)}>Experience</p>
+                    </div>
+                    <div className="sliding-bar" style={{ top: this.getTop() }}></div>
+                </div>
+            </>
         );
     }
 }

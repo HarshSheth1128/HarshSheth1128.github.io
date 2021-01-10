@@ -17,22 +17,20 @@
 }
 
 #section2 {
-  background-image: url('./images/section2.jpg');
+  /* background-image: url('./images/method-draw-image.svg'); */
   background-size: cover;
   background-position: center;
 }
 
 #section3 {
-  background-image: url('./images/section3.jpg');
+  /* background-image: url('./images/section3.jpg'); */
   background-size: cover;
   background-position: center;
 }
 
 #section4 {
-  background-image: url('./images/section3.jpg');
-  background-size: cover;
-  background-position: center;
-
+  /* background-image: url('./images/section3.jpg'); */
+  background: radial-gradient(ellipse at bottom, #2e3f52 0%, #090A0F 100%);
 }
 
 #section5 {

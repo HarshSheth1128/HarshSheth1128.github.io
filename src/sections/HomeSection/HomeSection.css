@@ -60,3 +60,20 @@
     z-index: 10px;
     cursor: pointer;
 }
+
+.birdGif {
+    position: absolute;
+    top: 50%;
+    animation: birdanimation 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes birdanimation{
+    from {
+        left: calc(100%);
+    }
+    to {
+        left: -100px;
+    }
+}

@@ -4,6 +4,7 @@ import '../../common/Section.css';
 import Bonfire from '../../images/bonfire.png';
 import Veeva from '../../images/veeva.png';
 import PVelocity from '../../images/pvelocity.png';
+import Timeline from '../../common/Timeline/Timeline';
 
 
 class ExperienceSection extends Component {
@@ -117,11 +118,14 @@ class ExperienceSection extends Component {
                 <div className="content">
                     <div className='textSection'>
                         <div className='aboveTextDiv'>
-                            <p>I've been blessed to work with many different people in life. All of them have provided me with invaluable experience</p>
-                            <h1 id="experienceHeading">Experience</h1>
+                            <span className="experienceTitle">Professional Experience</span>
+                            <span className="subtitle">I've been blessed to work with many different people in life. Below is my professional experience. Checkout my resume for more detail.</span>
                         </div>
                     </div>
-                    <div className='cardSection'>
+                    <div className="timelineParentContainer">
+                        <Timeline />
+                    </div>
+                    {/* <div className='cardSection'>
                         <div className="cards">
                             {
                                 this.state.experiences.map((experience) => (
@@ -145,7 +149,8 @@ class ExperienceSection extends Component {
                                 ))
                             }
                         </div>
-                    </div>
+                    </div> */}
+
                 </div>
             </div >
         );
