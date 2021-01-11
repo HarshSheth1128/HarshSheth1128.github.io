@@ -16,7 +16,7 @@ import JS from '../../../images/javascript.png';
 import CSS from '../../../images/css.png';
 import HTML from '../../../images/html.png';
 import Bash from '../../../images/bash.png';
-import Resume from '../../../assets/3A_Resume.pdf';
+import Resume from '../../../assets/Resume_4A.pdf';
 const moment = require('moment');
 moment().format();
 
@@ -127,7 +127,7 @@ class InfoPaper extends Component {
                         <div className="stack">
                             <button
                                 className={this.getDisplaySection('resume')}>
-                                <a href={Resume}>Resume <i class="fas fa-external-link-alt"></i></a>
+                                <a href={Resume}>Resume </a>
                             </button>
                             {/* <button
                                 className={this.getDisplaySection('technical')}

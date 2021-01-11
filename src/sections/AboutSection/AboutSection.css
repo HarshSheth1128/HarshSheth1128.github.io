@@ -3,9 +3,10 @@
     width: 100%;
     height: 100%;
     flex-direction: row;
-    background-image: url('../../images/method-draw-image.svg');
+    background-image: url('../../images/section2.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .infoRoot{
@@ -16,6 +17,29 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.resumeButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.281);
+    border: none;
+    color: white;
+    font-family: 'IBM Plex Sans';
+    border-radius: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+    border: none;
+}
+
+.resumeButton:hover {
+    border: 1px solid white;
+    transition: border 5s;
+}
+
 
 
 .infoContainer {
@@ -64,7 +88,7 @@
 
 .leftContent {
     width: 50%;
-    color: #1d1d1d;
+    color: white;
     display: flex;
     flex-direction: column;
 }
@@ -94,6 +118,25 @@
     font-size: 0.9em;
 }
 
+.profileImage {
+    position: absolute;
+    z-index: 1;
+    filter:brightness(0.9)
+}
+
+
+.imageGlass {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    background-color: rgba(42, 43, 46, 0.89);
+    height: 200%;
+    right: -500px;
+    width: 1000px;
+    filter: blur(2px);
+    transform: rotate(20deg);
+}
+
 
   @media only screen and (max-width: 1024px) {
 
@@ -104,16 +147,16 @@
     }
 
     .softwareHeading {
-        font-size: 3em;
+        font-size: 2.3em;
+        margin-bottom: 5px;
     }
 
     .contentDiv {
-        margin-top: 20px;
+        margin-top: 0px;
         margin-left: 0;
     }
 
     .about-content {
-        background-image: url('../../images/method-draw-image-medium.svg');
         background-size: cover;
         background-position: center;
         flex-direction: column;
@@ -123,6 +166,7 @@
     .leftContent {
         width: auto;
         padding: 30px;
+        margin-top: 50px;
     }
 
     .rightContent {
@@ -135,8 +179,9 @@
 
     .profileContent {
         width: auto;
-        background-color: white;
-        padding: 10px;
+        color:rgb(248, 248, 248);
+        background-color: rgba(104, 104, 104, 0.192);
+        padding: 20px;
     }
 
     .infoRoot {

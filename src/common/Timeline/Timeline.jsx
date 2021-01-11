@@ -79,13 +79,13 @@ function Timeline() {
           location="Bonfire"
           position="Full Stack Developer"
           months="Aug-Sept"
-          year="2018"
+          year="2019"
         />
         <TimelineLeft
           location="Veeva"
           position="Front-End Developer"
           months="Jan-Apr"
-          year="2019"
+          year="2020"
         />
         <TimelineRight
           location="BorgIQ"

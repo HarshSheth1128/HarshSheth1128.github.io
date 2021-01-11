@@ -3,6 +3,7 @@ import './AboutSection.css';
 import '../../common/Section.css';
 import InfoPaper from './InfoPaper/InfoPaper';
 import meTwo from '../../images/me_2.png'
+import Resume from '../../assets/Resume_4A.pdf';
 const moment = require('moment');
 moment().format();
 
@@ -40,8 +41,10 @@ class AboutSection extends Component {
                                 <p>Coding is my passion, I love to share, discuss, read, and most importantly write beautiful, articulate, and concise code.</p>
                             </div>
                         </div>
+                        <button className="resumeButton"><a href={Resume}>Resume <i class="fas fa-external-link-alt"></i></a></button>
                     </div>
                     <div className="rightContent">
+                        <div className="imageGlass"></div>
                         <img className="profileImage" alt="" src={meTwo} height={'500'}></img>
                     </div>
                 </div>
